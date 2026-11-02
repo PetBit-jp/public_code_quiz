@@ -1,6 +1,10 @@
 # 健康アラート
 
-[`LegacyAlertService.java`](LegacyAlertService.java) は「ペットの健康アラートを判定する日次バッチ」です。
+「ペットの健康アラートを判定する日次バッチ」のコードです。中身は同じものを 3 言語で用意しているので、好きな言語を 1 つ選んでください。
+
+- Java: [`LegacyAlertService.java`](LegacyAlertService.java)
+- Python: [`legacy_alert_service.py`](legacy_alert_service.py)
+- TypeScript: [`legacy_alert_service.ts`](legacy_alert_service.ts)
 
 現在のアラートは4種類です。
 
@@ -33,10 +37,12 @@
 
 2nd で説明した設計を、**アラート2種類ぶんだけ** コードにしてください。
 
-全部を書き切る必要もなく、動かなくても OK です。　
+全部を書き切る必要もなく、動かなくても OK です。1st で選んだ言語と別の言語で書いても構いません。
 
 ## 実行方法
 
 ```sh
-java LegacyAlertService.java
+java LegacyAlertService.java      # Java 17 以上
+python3 legacy_alert_service.py   # Python 3.9 以上
+node legacy_alert_service.ts      # Node.js 22.18 以上
 ```
